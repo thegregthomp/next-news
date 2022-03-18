@@ -12,10 +12,13 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
-
   return (
     <>
       <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+      <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Karla:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
         <meta charSet="UTF-8" key="charset" />
         <meta
           name="viewport"
@@ -46,6 +49,7 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+
       </Head>
       <NextSeo
         title={props.title}
