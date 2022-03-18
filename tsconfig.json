@@ -16,12 +16,12 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
-      "@/layout/*": ["layout/*"],
-      "@/templates/*": ["templates/*"],
-      "@/utils/*": ["utils/*"],
-      "@/styles/*": ["styles/*"],
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/layout/*": ["src/layout/*"],
+      "@/templates/*": ["src/templates/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/styles/*": ["src/styles/*"],
 
 
     }

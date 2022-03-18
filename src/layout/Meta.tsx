@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { AppConfig } from "@/utils/AppConfig";
+import { AppConfig } from "@/utils/appConfig";
 
 type IMetaProps = {
   title: string;
@@ -15,10 +15,6 @@ const Meta = (props: IMetaProps) => {
   return (
     <>
       <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-      <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Karla:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
         <meta charSet="UTF-8" key="charset" />
         <meta
           name="viewport"

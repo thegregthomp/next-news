@@ -8,7 +8,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="container">
+  <div className="container mx-auto">
     {props.meta}
     <Header />
     <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
