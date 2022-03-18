@@ -1,0 +1,14 @@
+{
+  "extends": "next/core-web-vitals",
+  "overrides": [
+    // Configuration for TypeScript files
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": ["@typescript-eslint", "unused-imports"],
+      "extends": [
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
-import { NextSeo } from "next-seo";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import { NextSeo } from 'next-seo';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import { AppConfig } from "@/utils/appConfig";
+import { AppConfig } from '@/utils/appConfig';
 
 type IMetaProps = {
   title: string;
@@ -45,7 +45,6 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
-
       </Head>
       <NextSeo
         title={props.title}

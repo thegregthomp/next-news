@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import Header from "@/layout/Header"
-import Footer from "@/layout/Footer"
+import { ReactNode } from 'react';
+import Header from '@/layout/Header';
+import Footer from '@/layout/Footer';
 
 type IMainProps = {
   meta: ReactNode;

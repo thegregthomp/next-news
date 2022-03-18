@@ -1621,6 +1621,10 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
+confusing-browser-globals@^1.0.10:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.11.tgz#ae40e9b57cdd3915408a2805ebd3a5585608dc81"
+
 convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.8.0.tgz#f3373c32d21b4d780dd8004514684fb791ca4369"
@@ -1903,6 +1907,21 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-airbnb-base@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz#6b09add90ac79c2f8d723a2580e07f3925afd236"
+  dependencies:
+    confusing-browser-globals "^1.0.10"
+    object.assign "^4.1.2"
+    object.entries "^1.1.5"
+    semver "^6.3.0"
+
+eslint-config-airbnb-typescript@^16.1.3:
+  version "16.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-16.1.3.tgz#ad2cfc66a3c29ba8a589938788fb838a8ece1469"
+  dependencies:
+    eslint-config-airbnb-base "^15.0.0"
+
 eslint-config-next@latest:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-12.1.0.tgz#8ace680dc5207e6ab6c915f3989adec122f582e7"
@@ -1916,6 +1935,10 @@ eslint-config-next@latest:
     eslint-plugin-jsx-a11y "^6.5.1"
     eslint-plugin-react "^7.27.0"
     eslint-plugin-react-hooks "^4.3.0"
+
+eslint-config-prettier@^8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
 
 eslint-import-resolver-node@^0.3.4, eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
@@ -1976,6 +1999,12 @@ eslint-plugin-jsx-a11y@^6.5.1:
     language-tags "^1.0.5"
     minimatch "^3.0.4"
 
+eslint-plugin-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.0.0.tgz#8b99d1e4b8b24a762472b4567992023619cb98e0"
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 eslint-plugin-react-hooks@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz#318dbf312e06fab1c835a4abef00121751ac1172"
@@ -1999,11 +2028,29 @@ eslint-plugin-react@^7.27.0:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.6"
 
+eslint-plugin-tailwindcss@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.5.0.tgz#861b2c3bc7c058fa24e72ca49910e2ad487cda33"
+  dependencies:
+    fast-glob "^3.2.5"
+    postcss "^8.4.4"
+    tailwindcss "^3.0.7"
+
 eslint-plugin-testing-library@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-testing-library/-/eslint-plugin-testing-library-5.0.1.tgz#2c963211dd6e9e7cd196a8096000f20ecf846712"
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.5.0"
+
+eslint-plugin-unused-imports@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unused-imports/-/eslint-plugin-unused-imports-2.0.0.tgz#d8db8c4d0cfa0637a8b51ce3fd7d1b6bc3f08520"
+  dependencies:
+    eslint-rule-composer "^0.3.0"
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
 
 eslint-scope@^5.1.1:
   version "5.1.1"
@@ -2143,7 +2190,11 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
 
-fast-glob@^3.2.11, fast-glob@^3.2.9:
+fast-diff@^1.1.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
+
+fast-glob@^3.2.11, fast-glob@^3.2.5, fast-glob@^3.2.9:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
   dependencies:
@@ -3588,7 +3639,7 @@ postcss@8.4.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
-postcss@^8.4.12, postcss@^8.4.6:
+postcss@^8.4.12, postcss@^8.4.4, postcss@^8.4.6:
   version "8.4.12"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
   dependencies:
@@ -3603,6 +3654,16 @@ prelude-ls@^1.2.1:
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
+
+prettier-linter-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
+  dependencies:
+    fast-diff "^1.1.2"
+
+prettier@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.0.tgz#12f8f504c4d8ddb76475f441337542fa799207d4"
 
 pretty-format@^27.0.0, pretty-format@^27.0.2, pretty-format@^27.5.1:
   version "27.5.1"
@@ -4046,7 +4107,7 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
 
-tailwindcss@^3.0.23:
+tailwindcss@^3.0.23, tailwindcss@^3.0.7:
   version "3.0.23"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.23.tgz#c620521d53a289650872a66adfcb4129d2200d10"
   dependencies:

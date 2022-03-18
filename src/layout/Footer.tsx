@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {};
 
@@ -12,43 +12,43 @@ export default function Footer({}: Props) {
         >
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              About{" "}
+              {' '}
+              About{' '}
             </a>
           </div>
 
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              Blog{" "}
+              {' '}
+              Blog{' '}
             </a>
           </div>
 
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              Jobs{" "}
+              {' '}
+              Jobs{' '}
             </a>
           </div>
 
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              Press{" "}
+              {' '}
+              Press{' '}
             </a>
           </div>
 
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              Accessibility{" "}
+              {' '}
+              Accessibility{' '}
             </a>
           </div>
 
           <div className="px-5 py-2">
             <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-              {" "}
-              Partners{" "}
+              {' '}
+              Partners{' '}
             </a>
           </div>
         </nav>
