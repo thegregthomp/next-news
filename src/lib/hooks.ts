@@ -12,7 +12,7 @@ type UserDataResponse = {
 
 export const useUserData = (): UserDataResponse => {
   const [user, loading, error] = useAuthState(auth);
-  const [userData, setUserData] = useState<any>({});
+  const [userData, setUserData] = useState<any>(null);
 
   useEffect(() => {
     // turn off realtime subscription
@@ -25,7 +25,7 @@ export const useUserData = (): UserDataResponse => {
         setUserData({ ...userData, ...user });
       });
     } else {
-      setUserData({});
+      setUserData(null);
     }
 
     return unsubscribe;
