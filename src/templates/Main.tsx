@@ -8,10 +8,10 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="container mx-auto">
+  <div className="">
     {props.meta}
     <Header />
-    <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+    <main className="container mt-16 mb-10 mx-auto max-w-7xl px-4 sm:mt-24">
       {props.children}
     </main>
     <Footer />

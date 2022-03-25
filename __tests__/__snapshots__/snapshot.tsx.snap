@@ -3,13 +3,15 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div
-    class="container mx-auto"
+    class=""
   >
     <header>
-      This is the header
+      <div>
+        News App
+      </div>
     </header>
     <main
-      class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24"
+      class="container mt-16 mb-10 mx-auto max-w-7xl px-4 sm:mt-24"
     >
       <div
         class="text-center bg-red"

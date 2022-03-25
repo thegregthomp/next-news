@@ -16,6 +16,7 @@ const customJestConfig = {
     '^@/templates/(.*)$': '<rootDir>/src/templates/$1',
     '^@/utils/(.*)$': '<rootDir>/src/utils/$1',
     '^@/layout/(.*)$': '<rootDir>/src/layout/$1',
+    '^@/lib/(.*)$': '<rootDir>/src/lib/$1',
   },
   testEnvironment: 'jest-environment-jsdom',
 };

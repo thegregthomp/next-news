@@ -3,9 +3,40 @@ import Image from 'next/image';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 
-import styles from '@/pages/index.module.css';
+import { firestore, fromMillis, postToJSON } from '@/lib/firebase';
 
-export default function Home() {
+import styles from '@/pages/index.module.css';
+import firebase from 'firebase/compat/app';
+
+// Max post to query per page
+const LIMIT = 10;
+
+export async function getServerSideProps() {
+  // const user = await getUserData('EUpJeKmW6FcMyS1JrAJI');
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
+
+// const getUserData = async (userId: string): Promise<any> => {
+//   const snapshot = await firestore.collection('users').doc(userId).get();
+//   const user = snapshot.data();
+//   const subscriptions = (
+//     await firestore
+//       .collection('sources')
+//       .where(
+//         firebase.firestore.FieldPath.documentId(),
+//         'in',
+//         user?.subscriptions
+//       )
+//       .get()
+//   ).docs.map((doc) => {
+//     return doc.data();
+//   });
+//   return { ...user, subscriptions };
+// };
+
+export default function Home(props) {
   return (
     <Main
       meta={
