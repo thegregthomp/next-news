@@ -11,8 +11,6 @@ export default function Header({}: Props) {
     signOut(auth);
   };
 
-  console.log('USER', user);
-
   return (
     <header>
       <div>News App</div>

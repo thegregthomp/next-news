@@ -12,6 +12,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "^12.1.0",
     "firebase": "^9.6.8",
+    "multiselect-react-dropdown": "^2.0.21",
     "next": "latest",
     "next-firebase-auth": "^0.14.3-alpha.0",
     "next-seo": "^5.1.0",

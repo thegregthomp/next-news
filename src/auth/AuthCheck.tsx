@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useContext } from 'react';
-import { UserContext } from '../lib/context';
+import { UserContext } from '@/lib/context';
 import { useUserData } from '@/lib/hooks';
 import Loader from '@/components/Loader';
 
@@ -27,7 +27,7 @@ export default function AuthCheck({ children, fallback }: Props) {
               {fallback ? (
                 <>{fallback}</>
               ) : (
-                <Link href="/enter">You must be signed in</Link>
+                <Link href="/auth/login">You must be signed in</Link>
               )}
             </>
           )}
