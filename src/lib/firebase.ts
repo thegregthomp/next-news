@@ -3,7 +3,7 @@ import { getAuth } from 'firebase/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: 'AIzaSyDl6yjJ10DBsUr5cVzrQ1bmrR_V8oq6nC0',
   authDomain: 'next-news-1458d.firebaseapp.com',
   projectId: 'next-news-1458d',

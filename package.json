@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^12.1.0",
+    "@sendgrid/mail": "^7.6.2",
     "firebase": "^9.6.8",
+    "firebase-admin": "^10.0.2",
     "multiselect-react-dropdown": "^2.0.21",
     "next": "latest",
     "next-firebase-auth": "^0.14.3-alpha.0",

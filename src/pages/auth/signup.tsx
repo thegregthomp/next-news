@@ -20,13 +20,13 @@ function Signup({}: Props) {
     createUserWithEmailAndPassword(auth, data.email, data.password)
       .then(async (userCredential) => {
         const { user } = userCredential;
-        console.log('USER', user);
         if (user) {
           const userDoc = firestore.doc(`users/${user.uid}`);
           await setDoc(userDoc, {
             firstName: data.firstName,
             lastName: data.lastName,
             subscriptions: [],
+            email: user.email,
           });
         } else {
         }

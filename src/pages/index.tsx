@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
+import getBaseUrl from '@/utils/baseUrl';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 import { firestore, fromMillis, postToJSON } from '@/lib/firebase';
 
@@ -11,12 +13,7 @@ import firebase from 'firebase/compat/app';
 // Max post to query per page
 const LIMIT = 10;
 
-export async function getServerSideProps() {
-  // const user = await getUserData('EUpJeKmW6FcMyS1JrAJI');
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-}
+export async function getServerSideProps({ req }: { req: NextApiRequest }) {}
 
 // const getUserData = async (userId: string): Promise<any> => {
 //   const snapshot = await firestore.collection('users').doc(userId).get();
@@ -37,6 +34,7 @@ export async function getServerSideProps() {
 // };
 
 export default function Home(props) {
+  console.log(props);
   return (
     <Main
       meta={

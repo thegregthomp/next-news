@@ -2,7 +2,7 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true',
   });
-  
+
   module.exports = withBundleAnalyzer({
     eslint: {
       dirs: ['.'],
@@ -14,4 +14,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
     // So, the source code is "basePath-ready".
     // You can remove `basePath` if you don't need it.
     reactStrictMode: true,
+    images: {
+      domains: ['firebasestorage.googleapis.com'],
+    },
   });
