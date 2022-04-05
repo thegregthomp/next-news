@@ -4,6 +4,7 @@ import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import React from 'react';
 import Link from 'next/link';
+import Avatar from '@mui/material/Avatar';
 
 type Props = {
   title: string;
@@ -46,6 +47,7 @@ function Layout({}: Props) {
                       src={'/' + user.firstName + '.png'}
                     />
                   </div>
+                  <Avatar>{user.firstName.split(' ').map(function(item){return item[0]}).join('')}</Avatar>
                 </>
               ) : (
                 <>
