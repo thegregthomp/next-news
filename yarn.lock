@@ -1970,7 +1970,7 @@
   dependencies:
     "cssom" "~0.3.6"
 
-"csstype@^3.0.11", "csstype@^3.0.2":
+"csstype@^3.0.10", "csstype@^3.0.11", "csstype@^3.0.2":
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.0.11.tgz"
   "version" "3.0.11"
 
@@ -2769,6 +2769,11 @@
     "ignore" "^5.2.0"
     "merge2" "^1.4.1"
     "slash" "^3.0.0"
+
+"goober@^2.1.1":
+  "integrity" "sha512-S0C85gCzcfFCMSdjD/CxyQMt1rbf2qEg6hmDzxk2FfD7+7Ogk55m8ZFUMtqNaZM4VVX/qaU9AzSORG+Gf4ZpAQ=="
+  "resolved" "https://registry.npmjs.org/goober/-/goober-2.1.8.tgz"
+  "version" "2.1.8"
 
 "graceful-fs@^4.2.4", "graceful-fs@^4.2.9":
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz"
@@ -4145,7 +4150,7 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@*", "react-dom@^17.0.0", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16.0.0", "react-dom@>=16.6.0", "react-dom@>=16.8.0 <18":
+"react-dom@*", "react-dom@^17.0.0", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16", "react-dom@>=16.0.0", "react-dom@>=16.6.0", "react-dom@>=16.8.0 <18":
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
   dependencies:
@@ -4167,6 +4172,13 @@
   "integrity" "sha512-mgwxvXuvt3FMY/mdnWbPc++Zf1U5xYzkhOaL05mtFMLvXc9MvUhMUlKtUVuO12sOrgT3nPXBgVFawtiJ4ONrgg=="
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.28.1.tgz"
   "version" "7.28.1"
+
+"react-hot-toast@^2.2.0":
+  "integrity" "sha512-248rXw13uhf/6TNDVzagX+y7R8J183rp7MwUMNkcrBRyHj/jWOggfXTGlM8zAOuh701WyVW+eUaWG2LeSufX9g=="
+  "resolved" "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "goober" "^2.1.1"
 
 "react-is@^16.13.1":
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -4190,7 +4202,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^16.7.0 || ^17.0.0-0", "react@^16.8.0 || ^17", "react@^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15 <=17", "react@>=16.0.0", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.0 <18", "react@>=17.0.0", "react@17.0.2":
+"react@*", "react@^16.7.0 || ^17.0.0-0", "react@^16.8.0 || ^17", "react@^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=15 <=17", "react@>=16", "react@>=16.0.0", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.8.0 <18", "react@>=17.0.0", "react@17.0.2":
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
   dependencies:

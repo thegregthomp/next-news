@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 
