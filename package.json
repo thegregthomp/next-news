@@ -10,7 +10,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.3",
     "@next/bundle-analyzer": "^12.1.0",
+    "dotenv": "^16.0.0",
     "firebase": "^9.6.8",
     "multiselect-react-dropdown": "^2.0.21",
     "next": "latest",
@@ -20,7 +24,8 @@
     "react-dom": "^17.0.2",
     "react-firebase-hooks": "^5.0.3",
     "react-firebaseui": "^6.0.0",
-    "react-hook-form": "^7.28.1"
+    "react-hook-form": "^7.28.1",
+    "react-hot-toast": "^2.2.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.0",
