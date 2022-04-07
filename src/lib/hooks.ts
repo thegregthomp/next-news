@@ -13,7 +13,7 @@ type UserDataResponse = {
 export const useUserData = (): UserDataResponse => {
   const [user, loading, error] = useAuthState(auth);
   const [userData, setUserData] = useState<any>(null);
-
+  //put gravatar use state here
   useEffect(() => {
     // turn off realtime subscription
     let unsubscribe;
@@ -24,6 +24,7 @@ export const useUserData = (): UserDataResponse => {
         let userData = doc.data();
         setUserData({ ...userData, ...user });
       });
+      //put gravatar logic here
     } else {
       setUserData(null);
     }
@@ -32,4 +33,5 @@ export const useUserData = (): UserDataResponse => {
   }, [user]);
 
   return { userData, loading, error };
+  // return { userData, loading, error, gravatarUrl };
 };

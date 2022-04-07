@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { UserContext } from '@/lib/context';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
-import Avatar from '@mui/material/Avatar';
+import Avatar from '@/components/Avatar';
+
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 
@@ -18,7 +19,7 @@ export default function Header({}: Props) {
     <header>
       <div className="relative bg-gray-50">
         <div className="relative bg-white shadow">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="px-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
@@ -34,26 +35,13 @@ export default function Header({}: Props) {
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 {user ? (
                   <>
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-10 w-10 ml-10 mr-10 rounded-full"
-                        src={'/' + user.firstName + '.png'}
-                      />
-                    </div>
-                    <Avatar>
-                      {user.firstName
-                        .split(' ')
-                        .map(function (item) {
-                          return item[0];
-                        })
-                        .join('')}
-                    </Avatar>
                     <button
-                      className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                      className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-1.5 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-600 bg-gray-200 hover:bg-gray-400"
                       onClick={logout}
                     >
                       Log Out
                     </button>
+                    <Avatar email={user?.email}></Avatar>
                   </>
                 ) : (
                   <>
@@ -81,19 +69,6 @@ export default function Header({}: Props) {
         </div>
       </div>
       <div>News App</div>
-
-      {user && <span>{user.firstName}</span>}
-      {user && (
-        <Avatar>
-          {user.firstName
-            .split(' ')
-            .map(function (item) {
-              return item[0];
-            })
-            .join('')}
-        </Avatar>
-      )}
-      {user && <button onClick={logout}>Log Out</button>}
     </header>
   );
 }

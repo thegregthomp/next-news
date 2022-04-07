@@ -12,10 +12,10 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.5.3",
     "@next/bundle-analyzer": "^12.1.0",
     "dotenv": "^16.0.0",
     "firebase": "^9.6.8",
+    "md5": "^2.3.0",
     "multiselect-react-dropdown": "^2.0.21",
     "next": "latest",
     "next-firebase-auth": "^0.14.3-alpha.0",
